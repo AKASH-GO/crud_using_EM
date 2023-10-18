@@ -1,8 +1,8 @@
 const express = require('express');
 const route = express.Router()
-const services = require('.../services/render');
+const services = require('../services/render');
 
-route.get('/',services.homeRoute)
+route.get('/',services.homeRoutes)
 
 route.get('/add-user',(req,res)=>{
     res.render('add_user');
